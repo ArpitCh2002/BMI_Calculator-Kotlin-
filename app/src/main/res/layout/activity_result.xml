@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|start"
+    android:background="@drawable/green_background"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="30dp"
+    android:orientation="vertical"
+    android:id="@+id/containerResult"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Your BMI is: "
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:text="25.6"
+            android:textSize="30sp"
+            android:id="@+id/bmiValueTV"
+            android:textColor="#3F51B5">
+        </TextView>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/bmiFlagImageView"
+            android:src="@drawable/ic_correct"
+            app:tint="@color/colorBlack"
+            android:layout_marginBottom="15dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bmiLabelTV"
+            android:text="You have a Normal Weight!"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:letterSpacing="0.03"
+            android:fontFamily="@font/poppins_bold">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/commentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here are some advice to keep your Weight Normal: "
+            android:textSize="13sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/colorBlack">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/adviceOneImage"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_active">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adviceOneTextView"
+                android:text="Stay Active!"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/poppins_semibold">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/adviceTwoImage"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_salad">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adviceTwoTextView"
+                android:text="Eat More Salad!"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/poppins_semibold">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/adviceThreeImage"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_sleep">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adviceThreeTextView"
+                android:text="Sleep Well!"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/poppins_semibold">
+            </TextView>
+
+        </LinearLayout>
+            
+    </LinearLayout>
+</LinearLayout>
+
